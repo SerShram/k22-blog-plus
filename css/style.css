@@ -1,0 +1,271 @@
+body{
+	margin: 0;
+	font-family: Roboto,sans-serif;
+
+}
+.header{
+	background-color: #cfe5ef;
+}
+.wrapper{
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.header__content{
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header__logo {}
+.header__menu {
+	list-style-type: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+	width: 69%;
+}
+.header__item {
+	position: relative;
+}
+.header__link::after{
+	content: "";
+	position: absolute;
+	top: 26%;
+	right: 0;
+	height: 60%;
+	width: 2px;
+	background-color: #333333;
+}
+.header__item:last-child .header__link::after{
+	display: none;
+} 
+.header__item:hover{
+	background-color: #ffffff;
+}
+.header__item:hover .submenu{
+	display: block;
+}
+.header__link {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #333333;
+	font-family: roboto,sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 0 20px;
+}
+.submenu {
+	display: none;
+	list-style-type: none;
+	position: absolute;
+	top: 100%;
+	white-space: nowrap;
+	padding: 11px 42px 11px 18px;
+	background-color: #ffffff;
+	border-radius: 0 5px 5px 5px;
+	box-shadow: 0px 1px 3px -1.5px;
+}
+.submenu__item {}
+.submenu__link {
+	text-decoration: none;
+	font-size: 20px;
+	color: #333333;
+}
+.header__button {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #333333;
+	font-size: 20px;
+	padding: 16px 35px;
+	background-color: #ffffff;
+}
+/*		Блоки без отступов		*/
+.content-body {}
+.block {}
+.block__title {
+	margin: 63px 0 32px;
+}
+.block__title:after {
+	content: "";
+	width: 200px;
+	height: 4px;
+	background-color: #c3c3c3;
+	display: block;
+	position: relative;
+	top: 6px;
+}
+.block__content {}
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+.row div{
+	height: 50px;
+	border: 1px solid #9f9f9f;
+	background-color: #e2e2e2;
+}
+.row__col-1 {
+	width: 92%;
+}
+.row__col-2 {
+	width: 8%;
+}
+.row__col-3 {
+	width: 84%;
+}
+.row__col-4 {
+	width: 16%;
+}
+.row__col-5 {
+	width: 75%;
+}
+.row__col-6 {
+	width: 25%;
+}
+.row__col-7 {
+	width: 67%;
+}
+.row__col-8 {
+	width: 33%;
+}
+.row__col-9 {
+	width: 59%;
+}
+.row__col-10 {
+	width: 41%;
+}
+.row__col-11 {
+	width: 50%;
+}
+.row__col-12 {
+	width: 50%;
+}
+/*		Блоки с отступами		*/
+.block_with_indent .row{
+	margin-bottom: 22px;
+}
+.block_with_indent .row:last-child{
+	margin: 0;
+}
+.row__item-1 {
+	width: 91%;
+}
+.row__item-2 {
+	width: 7%;
+}
+.row__item-3 {
+	width: 83%;
+}
+.row__item-4 {
+	width: 15%;
+}
+.row__item-5 {
+	width: 74%;
+}
+.row__item-6 {
+	width: 24%
+}
+.row__item-7 {
+	width: 65%;
+}
+.row__item-8 {
+	width: 33%;
+}
+.row__item-9 {
+	width: 57%;
+}
+.row__item-10 {
+	width: 41%;
+}
+.row__item-11 {
+	width: 49%;
+}
+.row__item-12 {
+	width: 49%;
+}
+/*		Отзывы посетителей нашего сайта		*/
+.user {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0 30px;
+	border-bottom: 1px solid rgba(121, 121, 121, 0.5);
+}
+.user:first-child{
+	padding-top: 0;
+}
+.user:last-child{
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+.user__icon {
+	align-self: flex-start;
+}
+.user__content {
+	width: 83%;
+}
+.user__name {
+	display: inline-block;
+	font-size: 20px;
+	margin: 8px 0;
+}
+.user__date {
+	display: inline-block;
+	font-size: 16px;
+	color: #6e6e6e;
+	opacity: 0.47;
+}
+.user__date::before{
+	content: url(../image/calendar.png);
+	margin: 0px 10px 0 30px;
+	top: 2px;
+}
+.user__text {
+	color: #797979;
+}
+/*		Галерея		*/
+.block_galery .block__title{
+	width: 200px;
+	text-align: center;
+	margin: 63px auto 63px;
+}
+.galery {
+	display: flex;
+	justify-content: space-between; 
+}
+.galery__item {
+	width: 259px;
+	border-left: 9px solid #fff;
+	border-right: 9px solid #fff;
+}
+.galery__image {
+	width: 259px;
+	height: 259px;
+	background-image: url(../image/no-image-default.jpg);
+	position: relative;
+}
+.galery__fram_top {
+	width: 267px;
+	height: 267px;
+	border-top: 1px solid #e2e2e2;
+	border-left: 1px solid #e2e2e2;
+	position: absolute;
+	top: -9px;
+	left: -9px;
+}
+.galery__fram_bottom {
+	width: 267px;
+	height: 267px;
+	border-bottom: 1px solid #e2e2e2;
+	border-right: 1px solid #e2e2e2;
+	position: absolute;
+	bottom: -9px;
+	right: -9px;
+}
+.galery__text {
+	font-size: 12.3px;
+	color: #000;
+	font-weight: bold;
+	margin: 20px 0 63px;
+}
