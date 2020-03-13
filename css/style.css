@@ -7,7 +7,7 @@ body{
 	background-color: #cfe5ef;
 }
 .wrapper{
-	max-width: 1270px;
+	max-width: 1250px;
 	margin: 0 auto;
 	padding: 0 10px;
 }
@@ -65,6 +65,7 @@ body{
 	background-color: #ffffff;
 	border-radius: 0 5px 5px 5px;
 	box-shadow: 0px 1px 3px -1.5px;
+	line-height: 1.4;
 }
 .submenu__item {}
 .submenu__link {
@@ -203,7 +204,7 @@ body{
 	align-self: flex-start;
 }
 .user__content {
-	width: 83%;
+	padding: 0 0 0 30px;
 }
 .user__name {
 	display: inline-block;
@@ -234,15 +235,21 @@ body{
 	display: flex;
 	justify-content: space-between; 
 }
+@media (max-width: 1144px){
+	.galery{
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 70%;
+	margin: 0 auto;
+	}
+}
 .galery__item {
 	width: 259px;
-	border-left: 9px solid #fff;
-	border-right: 9px solid #fff;
+	border: 9px solid #fff;
 }
 .galery__image {
 	width: 259px;
 	height: 259px;
-	background-image: url(../image/no-image-default.jpg);
 	position: relative;
 }
 .galery__fram_top {
